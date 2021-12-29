@@ -37,3 +37,32 @@ int main()
     
     return 0;
 }
+
+
+#include <stdio.h>
+
+typedef struct books{
+        
+        char BookName[15];
+        char AuthorName[15];
+        int BookPrice;
+        int number_of_books;
+}B;
+int main()
+{
+    B book[2];
+    
+    for(int i=1;i<3;i++)
+   {
+            
+    printf("Enter Name of Book%d : ",i);
+    scanf("%s",book[i].BookName);
+     printf("Enter Name of Author of Book%d : ",i);
+    scanf("%s",book[i].AuthorName);
+     printf("Enter price of Book%d : ",i);
+    scanf("%d",&book[i].BookPrice);
+     printf("Enter Numbers of Books required%d : ",i);
+    scanf("%d",&book[i].number_of_books);
+    
+}
+
